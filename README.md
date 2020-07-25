@@ -28,7 +28,7 @@ venv\Scripts\activate.bat
 ```
 On MacOS, Linux or Windows Git Bash
 ```sh
-source venv/bin/activate
+source venv/Scripts/activate
 ```
 **For getting out of it:**
 ```sh
