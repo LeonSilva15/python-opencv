@@ -28,5 +28,5 @@ cv2.imshow('Median Blurred Blurring', img_median_blur)
 img_bilateral_blur = cv2.bilateralFilter(img, 9, 75, 75)
 cv2.imshow('Bilateral Blurred Blurring', img_bilateral_blur)
 
-cv2.waitKey(0) 
+cv2.waitKey(0)
 cv2.destroyAllWindows()
