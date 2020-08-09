@@ -15,5 +15,12 @@ cv2.imshow('Bigger Image', img_scaled)
 img_scaled = cv2.resize(img, None, fx=0.5, fy=0.5, interpolation=cv2.INTER_CUBIC)
 cv2.imshow('Smaller Image', img_scaled)
 
+# Rezise modifing the number of pixels
+img_scaled = cv2.resize(img, (1000, 500))
+cv2.imshow('Modify pixels Image 1', img_scaled)
+
+img_scaled = cv2.resize(img, (300, 1000))
+cv2.imshow('Modify pixels Image 2', img_scaled)
+
 cv2.waitKey(0)
 cv2.destroyAllWindows()
