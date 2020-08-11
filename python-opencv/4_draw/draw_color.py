@@ -9,5 +9,14 @@ import numpy as np
 black_img = np.zeros((300, 300))
 cv2.imshow('Black image', black_img)
 
+# In order to give it some colors, we need to set the image on 3 channels
+# As a good practice, we specify the data type (unsigned int 8 bits)
+color_img = np.zeros((300,300,3),np.uint8)
+# Set the color on every pixel
+color_img[:] = 255,0,0
+# Set the color on every pixel
+color_img[:] = 255,0,0
+cv2.imshow('Color image', color_img)
+
 cv2.waitKey(0)
 cv2.destroyAllWindows()
