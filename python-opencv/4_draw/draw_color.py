@@ -14,8 +14,6 @@ cv2.imshow('Black image', black_img)
 color_img = np.zeros((300,300,3),np.uint8)
 # Set the color on every pixel
 color_img[:] = 255,0,0
-# Set the color on every pixel
-color_img[:] = 255,0,0
 cv2.imshow('Color image', color_img)
 
 # Color only a part of the image
