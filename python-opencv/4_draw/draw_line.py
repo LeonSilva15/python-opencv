@@ -8,11 +8,12 @@ import numpy as np
 img_black = np.zeros((300, 300, 3), np.uint8)
 
 # Draw lines:
-# Draw a line on img_black from 20x,20y to 200x, 200y, white color (255,255,255), thickness 2 pixels
-cv2.line(img_black, (20,20), (200, 200), (255, 255, 255), 2)
+# Draw a line on img_black from 200x,20y to 20x, 200y, white color (255,255,255), thickness 2 pixels
+cv2.line(img_black, (200,20), (20, 200), (255, 255, 255), 2)
 
-# Draw a line on img_black from 200x,20y to 20x, 200y, blue color (255,255,255), no thickness defined
-cv2.line(img_black, (200,20), (20, 200), (255, 0, 0))
+# Draw a line on img_black from 0x,0y to max x, max y, blue color (255,255,255), no thickness defined
+# .shape() retrieves the image dimension in a 2 spaces array
+cv2.line(img_black, (0, 0), (img_black.shape[0], img_black.shape[1]), (255, 0, 0))
 
 # Show image
 cv2.imshow('Base image', img_black)
